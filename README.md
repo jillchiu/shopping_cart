@@ -136,3 +136,7 @@ Implementing both projects allowed me to compare:
 | Vanilla JavaScript | React Components |
 
 This comparison helped me better understand the different responsibilities of backend and frontend architectures.
+
+This project is kept as part of my portfolio to show my progression from traditional PHP development to modern React applications.
+
+Rather than replacing older work, I keep both implementations available to demonstrate how I approached the same problem using different technologies at different stages of my learning.
