@@ -140,3 +140,14 @@ This comparison helped me better understand the different responsibilities of ba
 This project is kept as part of my portfolio to show my progression from traditional PHP development to modern React applications.
 
 Rather than replacing older work, I keep both implementations available to demonstrate how I approached the same problem using different technologies at different stages of my learning.
+
+## 🚀 Evolution
+
+This project represents my earlier PHP implementation of a shopping cart.
+
+Years later, I rebuilt the same concept using React to compare:
+
+- Server-side Session
+- Client-side Context API
+
+This allowed me to better understand state management on both backend and frontend.
