@@ -1,38 +1,136 @@
-# 🍎 Jill Online Fruit Store (Simple PHP Cart)  
-A lightweight, tutorial-level shopping cart application built with Vanilla PHP, JavaScript, and CSS.  
+# 🛒 Shopping Cart (PHP)
 
-This is a foundational e-commerce practice project designed to demonstrate core concepts in server-side state management (Sessions) and frontend dynamic interactions (DOM Manipulation & Fetch API). It is built entirely with vanilla syntax without relying on any third-party frontend or backend frameworks.
+A simple shopping cart application built with **PHP, JavaScript, HTML and CSS**.
 
-## 📸 Screenshot
+This project was created before I started using React and modern frontend frameworks.
+It demonstrates how a shopping cart can be implemented using **server-side rendering**, **PHP Session**, and vanilla JavaScript.
+
+Later, I rebuilt the same concept using React to compare frontend-only state management with a backend session approach.
+
+## 🌐 Live Demo
+
+🔗 Demo: https://shopping-cart-csdw.onrender.com/
+
+📦 Source Code: https://github.com/jillchiu/shopping_cart
+
+## 📷 Screenshot
+
 ![index](https://i.imgur.com/Kj3xk7K.png)
 
-## ✨ Features  
-Dynamic Product Grid: Implemented a responsive layout using CSS Grid, featuring custom hover overlay animations to display product details.
+## ✨ Features
 
-Shopping Cart System:
+* Product list
+* Shopping cart
+* Add products
+* Increase quantity
+* Decrease quantity
+* Remove products
+* Empty cart
+* Automatic total price calculation
+* Session-based cart persistence
+* Product hover animation
+* Responsive layout
 
-* Add products to the cart via click events (sending POST requests using the JS Fetch API).
+## 🛠 Tech Stack
 
-* Instantly increase/decrease product quantities or remove specific items directly from the sidebar cart.
+* PHP
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+* PHP Session
 
-* Basic interactive functionalities including dynamic total price calculation, cart emptying, and checkout alerts.
+## 📁 Project Structure
 
-* State Management: The backend relies entirely on native PHP $_SESSION to store and update user cart data securely.
+```
+shopping-cart-php/
 
-## 🛠️ Tech Stack
-* Frontend: HTML5, CSS3, Vanilla JavaScript (ES6+)
+├── index.php
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── img/
+```
 
-* Backend: Vanilla PHP
+## 🧩 Architecture
 
-* State Management: PHP Sessions
+### Server Side
 
-## 🧠 Learning Objectives
-* The primary goal of this project was to master the fundamental workings of web applications:
+PHP handles:
 
-* PHP Sessions in Practice: Learning how to use $_SESSION to persist user shopping data across a stateless HTTP protocol.
+* Product data
+* Cart state
+* Quantity updates
+* Total price calculation
+* Session management
+* Rendering HTML
 
-* Client-Server Communication: Using the JavaScript fetch() API to send requests and interact with the backend PHP (index.php) for data processing and page reloads.
+### Client Side
 
-* Vanilla DOM Manipulation: Extensive practice with querySelectorAll and addEventListener to handle various user click and mouse hover events.
+JavaScript handles:
 
-* Responsive Web Design (RWD): Utilizing CSS Media Queries (max-width: 1372px, 926px) to ensure the product grid adapts seamlessly to different screen sizes.
+* AJAX requests
+* Hover animation
+* Cart open/close animation
+* Page interaction
+
+Unlike the React version, the shopping cart state is stored inside **PHP Session**, making it survive page refreshes without frontend state management.
+
+## 📚 What I Learned
+
+During this project I learned how to build a complete shopping cart without using any frontend framework.
+
+Topics included:
+
+* PHP Session
+* CRUD-like cart operations
+* DOM manipulation
+* Fetch API
+* AJAX communication
+* Server-side rendering
+* State persistence
+* Responsive CSS
+
+## ⚠ Legacy Project
+
+This project represents an earlier stage of my development.
+
+Some implementation choices are intentionally left unchanged to preserve the original work.
+
+Examples include:
+
+* Single-file PHP architecture
+* Inline business logic
+* Limited separation of concerns
+* No routing
+* No database
+* No authentication
+* No dependency management
+
+If I were rebuilding this project today, I would likely:
+
+* Separate controllers, services and views
+* Use a database instead of hardcoded data
+* Introduce REST APIs
+* Improve folder structure
+* Apply MVC architecture
+* Add validation and error handling
+* Write automated tests
+
+## 🔄 Related Project
+
+I also created another Shopping Cart using **React**.
+
+While this version stores cart data in **PHP Session**, the React version stores everything in **Context API** on the client side.
+
+Implementing both projects allowed me to compare:
+
+| PHP Version | React Version |
+|-------------|---------------|
+| Server-side rendering | Client-side rendering |
+| PHP Session | React Context |
+| Full page refresh | SPA updates |
+| Server-managed state | Client-managed state |
+| Vanilla JavaScript | React Components |
+
+This comparison helped me better understand the different responsibilities of backend and frontend architectures.
