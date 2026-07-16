@@ -1,5 +1,7 @@
 # 🛒 Shopping Cart (PHP)
 
+## 🧪 Overview
+
 A simple shopping cart application built with **PHP, JavaScript, HTML and CSS**.
 
 This project was created before I started using React and modern frontend frameworks.
